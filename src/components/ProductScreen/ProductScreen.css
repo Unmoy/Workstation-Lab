@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.productImage_container {
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.column {
+  width: 500px;
+  height: 550px;
+  padding: 10px;
+}
+.productImage_container img {
+  width: 50%;
+}
+.line {
+  line-height: 0;
+}
+.checked {
+  color: #01d19c;
+  cursor: pointer;
+}
+.review {
+  cursor: pointer;
+}
+.btn1 {
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+}
+.btn2 {
+  background: transparent;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 425px) {
+  .column {
+    width: 100%;
+  }
+  .btn2 {
+    margin-top: 10px;
+  }
+}
