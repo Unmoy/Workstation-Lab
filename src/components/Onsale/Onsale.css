@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap");
+.banner_container {
+  display: flex;
+  height: 100vh;
+}
+.banner {
+  height: 500px;
+  background-color: #f2f4ff;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+}
+.banner.middle {
+  background-color: #485ad8;
+}
+.banner_text {
+  flex: 1;
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  font-family: "Prompt", sans-serif;
+}
+.banner_text h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #3c3c5d;
+}
+.banner_text p {
+  font-size: 16px;
+  color: #3c3c5d;
+}
+.banner_text button {
+  background-color: #485ad8;
+  min-width: 46px;
+  height: 46px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.banner_text.middle {
+  text-align: center;
+}
+.banner_text.middle h1 {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1em;
+  color: #fff;
+}
+.banner_text.middle p {
+  font-size: 22px;
+  color: #fff;
+  /* font-weight: 600; */
+}
+.shipping_btn {
+  background-image: url("https://cdn.shopify.com/s/files/1/0453/5035/5103/t/2/assets/btn.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 44px;
+  border: none;
+  border-radius: 0;
+}
+.banner_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.banner_image img {
+  width: 100%;
+}
+.banner_image.large img {
+  width: 47%;
+}
