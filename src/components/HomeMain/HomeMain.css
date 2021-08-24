@@ -32,3 +32,23 @@
   padding: 10px 20px 10px 20px;
   border: 1px solid black;
 }
+@media only screen and (max-width: 600px) {
+  .home_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_text {
+    margin-top: 20px;
+  }
+  .btn2 {
+    margin: 0px;
+  }
+  .home_image img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .home_image img {
+    width: 100%;
+  }
+}

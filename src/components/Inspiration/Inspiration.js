@@ -15,7 +15,7 @@ const Inspiration = () => {
           explicabo sit odio ex odit reprehenderit aspernatur illum perferendis!
           Doloremque!
         </p>
-        <button className='subscribe-btn'>Read More</button>
+        <button className="subscribe-btn">Read More</button>
       </div>
     </section>
   );
