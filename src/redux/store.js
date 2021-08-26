@@ -6,8 +6,10 @@ import {
 } from "./reducers/productReducer";
 import cartReducer from "../redux/reducers/cartReducer";
 import thunk from "redux-thunk";
+import authReducer from "./reducers/authReducer";
 
 const rootreducer = combineReducers({
+  auth: authReducer,
   getProducts: getProductsReducer,
   cart: cartReducer,
   getProductDetails: getProductDetailsReducer,

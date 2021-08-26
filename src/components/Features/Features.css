@@ -1,6 +1,6 @@
-.featuresContainer{
-    overflow-x: scroll;
+.featuresContainer {
+  overflow-x: scroll;
 }
-.featuresContainer::-webkit-scrollbar{
-    display: none;
+.featuresContainer::-webkit-scrollbar {
+  display: none;
 }

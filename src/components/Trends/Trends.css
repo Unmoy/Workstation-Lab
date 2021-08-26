@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap");
+
+.trend_container {
+  background-color: #191b2a;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.trend_image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1.5;
+}
+.trend_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  font-family: "Prompt", sans-serif;
+}
+.trend_details h6 {
+  color: #485ad7;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.trend_details h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #fff;
+}
+.trend_details p {
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #fff;
+}
+.trend_details button {
+  background: #485ad7;
+  color: #fff;
+  min-width: 154px;
+  margin: 7px 3px 7px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 14px 23px;
+  border-width: 1px;
+}
+.trend_image img {
+  width: 70%;
+}
+@media only screen and (max-width: 600px) {
+  .trend_container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .trend_image {
+    justify-content: center;
+  }
+  .trend_info {
+    justify-content: center;
+  }
+  .trend_details {
+    text-align: center;
+  }
+  .trend_details h6 {
+    text-align: center;
+  }
+  .trend_details h1 {
+    font-size: 50px;
+  }
+}

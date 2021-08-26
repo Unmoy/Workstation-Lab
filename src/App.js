@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Shop from "./components/Store/Shop";
 // import Order from "./components/Order/Order";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import BackDrop from "./components/BackDrop/BackDrop";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import ProductScreen from "./components/ProductScreen/ProductScreen";
@@ -15,11 +15,12 @@ function App() {
   const [toggle, setToggle] = useState(false);
   return (
     <Router>
-      {/* <Navbar
+      <Navbar
         click={() => {
           setToggle(true);
         }}
-      /> */}
+      />
+
       <BackDrop
         show={toggle}
         click={() => {

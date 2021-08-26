@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap");
 .banner_container {
   display: flex;
-  height: 100vh;
+  height: 75vh;
 }
 .banner {
   height: 500px;
@@ -68,7 +68,7 @@
   flex: 1;
 }
 .banner_image img {
-  width: 100%;
+  width: 90%;
 }
 .banner_image.large img {
   width: 47%;

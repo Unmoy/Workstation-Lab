@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap");
+.carousel_wrapper {
+  height: 80vh;
+  /* display: flex;
+  align-items: center; */
+}
+.carousel_wrapper h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 30px;
+  color: #485ad7;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px;
+}
+
+.rec.rec-dot {
+  background-color: transperant;
+}
+.rec.rec-dot_active {
+  background-color: blue;
+  box-shadow: 0;
+}
+.rec.rec-dot_active:focus {
+  box-shadow: 0;
+}
