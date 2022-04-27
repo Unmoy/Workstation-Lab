@@ -1,5 +1,5 @@
 export const getProducts = () => {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => {
@@ -11,7 +11,7 @@ export const getProducts = () => {
   };
 };
 export const getProductsDetails = (id) => {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     fetch(`http://localhost:5000/products/${id}`)
       .then((res) => res.json())
       .then((data) => {

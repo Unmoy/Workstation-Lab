@@ -5,8 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../redux/actions/productActions";
 
 const Shop = () => {
-  const data = useSelector((state) => {
-    // console.log(state.getProducts.productLists);
+  const items = useSelector((state) => {
     return state.getProducts.productLists;
   });
   const dispatch = useDispatch();
@@ -14,13 +13,12 @@ const Shop = () => {
     dispatch(getProducts());
   }, [dispatch]);
   return (
-    <div style={{ background: "#e7f3f1" }}>
-      <div className="container">
-        <div className="row d-flex justify-content-center">
-          {data.map((pd) => (
-            <StoreProducts key={pd.id} pd={pd}></StoreProducts>
-          ))}
-        </div>
+    <div className="store_container">
+      <h3>Computers</h3>
+      <div className="main_content">
+        {items?.map((pd) => (
+          <StoreProducts key={pd._id} pd={pd}></StoreProducts>
+        ))}
       </div>
     </div>
   );

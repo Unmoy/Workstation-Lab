@@ -1,6 +1,5 @@
 import React from "react";
 import BestSeller from "../BestSeller/BestSeller";
-import Features from "../Features/Features";
 import Footer from "../Footer/Footer";
 import HomeMain from "../HomeMain/HomeMain";
 import Inspiration from "../Inspiration/Inspiration";
@@ -15,9 +14,8 @@ const Home = () => {
       <Onsale></Onsale>
       <Trends></Trends>
       <BestSeller></BestSeller>
-      {/* <Features></Features> */}
-      {/* <Inspiration></Inspiration> */}
-      {/* <Newsletter></Newsletter>
+      {/* <Inspiration></Inspiration>
+      <Newsletter></Newsletter>
       <Footer></Footer> */}
     </>
   );

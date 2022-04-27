@@ -4,24 +4,24 @@ import React from "react";
 import "./StoreProducts.css";
 import { useHistory } from "react-router";
 
-
 const StoreProducts = ({ pd }) => {
-  const { name, price, category, imageUrl, _id } = pd;
+  const { title, price, category, description, imageUrl, _id } = pd;
   const history = useHistory();
   const handleClick = () => {
-    const url = `/product/${_id}`;
+    const url = `/productscreen/${_id}`;
     history.push(url);
   };
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <img className="card-img-top product-img" src={imageUrl} alt="" />
-      <div className="card-body">
-        <h5 className="card-title">{name}</h5>
-        <p className="card-text">Price: $ {price}.00</p>
-        <p className="card-text">{category}</p>
-        <button className="order-btn" onClick={handleClick}>
-          <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-        </button>
+    <div className="card_wrapper">
+      <div className="card_image">
+        <img src={imageUrl} alt="thumb" />
+      </div>
+      <div className="card_content">
+        <p>{title}</p>
+        <p>${price}</p>
+        <div className="cta" onClick={handleClick}>
+          View Details
+        </div>
       </div>
     </div>
   );

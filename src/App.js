@@ -20,14 +20,14 @@ function App() {
           setToggle(true);
         }}
       />
-
+      {/* 
       <BackDrop
         show={toggle}
         click={() => {
           setToggle(false);
         }}
       />
-      <SideDrawer show={toggle} />
+      <SideDrawer show={toggle} /> */}
       <Switch>
         <Route exact path="/">
           <Home></Home>
@@ -35,13 +35,13 @@ function App() {
         <Route path="/home">
           <Home></Home>
         </Route>
-        <Route path="/Shop">
+        <Route path="/shop">
           <Shop></Shop>
         </Route>
         <Route path="/cart">
           <CartScreen></CartScreen>
         </Route>
-        <Route path="/product/:id">
+        <Route path="/productscreen/:id">
           <ProductScreen></ProductScreen>
         </Route>
         {/* <Route path="/orders/:id">

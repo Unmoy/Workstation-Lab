@@ -4,7 +4,7 @@ import "./HomeMain.css";
 
 const HomeMain = () => {
   return (
-    <section style={{ background: "#ebf0f4" }}>
+    <section style={{ background: "#F2F4FF" }}>
       <div className="home_container">
         <div className="home_info">
           <div className="home_text">

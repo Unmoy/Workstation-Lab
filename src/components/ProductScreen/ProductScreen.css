@@ -1,45 +1,75 @@
-.container {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.product_screen {
+  min-height: 88vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 .productImage_container {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   padding: 10px;
-  display: flex;
-  justify-content: center;
+}
+.productImage_container img {
+  width: 100%;
 }
 .column {
   width: 500px;
   height: 550px;
   padding: 10px;
+  margin-left: 50px;
 }
-.productImage_container img {
-  width: 50%;
+.column h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
-.line {
-  line-height: 0;
+.product_category {
+  font-size: 15px;
+  color: #999;
+}
+.product_price {
+  color: #d26e4b;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.product_description {
+  font-size: 15px;
+  color: #666666;
 }
 .checked {
-  color: #01d19c;
+  color: #485ad8;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .review {
   cursor: pointer;
 }
+.clock_icon {
+  margin-right: 8px;
+  color: #485ad8;
+}
+.quantity_selector {
+  padding: 5px 20px;
+  margin-left: 10px;
+}
+.quantity_options {
+  padding: 10px;
+}
 .btn1 {
-  background-color: black;
-  color: #ffffff;
+  background-color: #485ad8;
+  color: #fff;
   padding: 10px 20px 10px 20px;
-  border: 1px solid black;
+  border: none;
 }
 .btn2 {
   background: transparent;
-  color: black;
+  color: #000;
   padding: 10px 20px 10px 20px;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 @media only screen and (max-width: 425px) {

@@ -11,11 +11,9 @@ const cartReducer = (state = initialState, action) => {
       if (existItem) {
         return {
           ...state,
-          cartItems: [
-            state.cartItems.map((product) =>
-              product.id === existItem.id ? item : product
-            ),
-          ],
+          cartItems: state.cartItems.map((product) =>
+            product.id === existItem.id ? item : product
+          ),
         };
       } else {
         return {
@@ -25,6 +23,7 @@ const cartReducer = (state = initialState, action) => {
       }
     }
     case "REMOVE_FROM_CART": {
+      // all them items are added in the cart which are not equal to the payload id with filter method
       const newState = {
         ...state,
         cartItems: state.cartItems.filter(

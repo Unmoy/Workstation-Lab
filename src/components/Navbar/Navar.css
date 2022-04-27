@@ -3,17 +3,19 @@
   background: #ebf0f4;
   height: 80px;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
   font-size: 1.2rem;
 }
-
 .navbar_logo {
   font-family: "Rampart One", cursive;
   justify-self: start;
   cursor: pointer;
   width: 35vw;
   padding: 0px 30px;
+  background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .menu_icon {
   display: none;
@@ -53,6 +55,29 @@
 .nav_link_ltr:hover::before {
   width: 50%;
 }
+.count_section {
+  position: relative;
+}
+.nav_cart_icon {
+  color: #000;
+  font-size: 25px;
+}
+.cart_count {
+  position: absolute;
+  right: -11px;
+  top: -10px;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #0052d4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+/* Responsive Breakpoints */
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;

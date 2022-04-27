@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap");
 .carousel_wrapper {
   height: 80vh;
-  /* display: flex;
-  align-items: center; */
 }
 .carousel_wrapper h1 {
-  font-family: "Prompt", sans-serif;
   font-size: 30px;
   color: #485ad7;
   font-weight: 600;
@@ -14,12 +11,62 @@
 }
 
 .rec.rec-dot {
-  background-color: transperant;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .rec.rec-dot_active {
-  background-color: blue;
-  box-shadow: 0;
+  background-color: #485ad8;
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
 .rec.rec-dot_active:focus {
-  box-shadow: 0;
+  box-shadow: none;
+  background-color: #485ad8;
+}
+.rec.rec-dot:hover {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.rec.rec-dot_active:hover {
+  box-shadow: none;
+  background-color: #485ad8;
+}
+.khvUfi {
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.6em;
+  background-color: #485ad8 !important;
+  color: #333;
+  box-shadow: 0 0 2px 0px #333;
+  border: none;
+  padding: 0;
+  height: 100px !important;
+  min-width: 20px !important;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0 !important;
+}
+.eRmJbc {
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.6em;
+  background-color: rgba(103, 58, 183, 0.1);
+  color: #333;
+  box-shadow: 0 0 2px 0px #333;
+  border: none;
+  padding: 0;
+  height: 100px !important;
+  min-width: 20px !important;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0 !important;
 }
